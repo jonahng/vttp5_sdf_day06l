@@ -3,6 +3,7 @@ import java.nio.*;
 import java.net.*;
 
 
+
 public class ServerApp {
 
     public static final String ARG_MESSAGE = "usage: java workshop.serverapp <port number>";
@@ -32,6 +33,8 @@ public class ServerApp {
                             break;
                         }else if(commandMesssage.equals("get-cookie")){
                             //call cookie object and random
+                            String randomCookie = Cookie.getRandomCookie();
+                            dos.writeUTF("cookie-text" + randomCookie);
                         }else{
                             dos.writeUTF("invalid command");
                         }
