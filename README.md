@@ -1,1 +1,1 @@
-day 6 lecture stuff
+day 6 lecture stuff, this is an example from the lecture
